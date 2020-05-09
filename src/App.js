@@ -21,7 +21,7 @@ class App extends React.Component {
     this.deleteItem = this.deleteItem.bind(this);
     this.setUpdate = this.setUpdate.bind(this);
   }
-  addItem(e){
+  addItem(e){/*Here we add all the tasks that the user needs to do that day */
     e.preventDefault();
     const newItem = this.state.currentItem;
     if(newItem.text !==""){
@@ -43,7 +43,7 @@ class App extends React.Component {
       }
     })
   }
-  deleteItem(key){
+  deleteItem(key){/*delete method*/
     const filteredItems= this.state.items.filter(item =>
       item.key!==key);
     this.setState({
@@ -51,7 +51,7 @@ class App extends React.Component {
     })
 
   }
-  setUpdate(text,key){
+  setUpdate(text,key){ /*update method */ 
     console.log("items:"+this.state.items);
     const items = this.state.items;
     items.map(item=>{      

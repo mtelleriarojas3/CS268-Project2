@@ -13,13 +13,14 @@ function ListItems(props){
              props.setUpdate(e.target.value,item.key)}}/>
         <span>
        
-        <FontAwesomeIcon className="faicons" onClick={() => {
+        <FontAwesomeIcon className="faicons" onClick={() => {/*creates the trash icon after the user creates a new task*/
             props.deleteItem(item.key)
         }} icon="trash" />
         </span>
      </p>
      
     </div>})
+    /*the user clicks on the trash icon and the flip effect happens.*/ 
     return <div>
         <FlipMove duration={300} easing="ease-in-out">
         {listItems}
