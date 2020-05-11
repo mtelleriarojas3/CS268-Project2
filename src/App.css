@@ -1,6 +1,8 @@
 h1{
   text-align: center;
   color: rgb(24, 27, 202);
+  border: 5px solid rgb(192, 251, 255);
+  border-radius: 25px;
 }
 
 body{
