@@ -16,6 +16,8 @@ class App extends React.Component {
         key:''
       }
     }
+
+    
     this.addItem = this.addItem.bind(this);
     this.handleInput = this.handleInput.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
